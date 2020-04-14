@@ -1,0 +1,33 @@
+<br/><br/><div class="container">
+    <div class="row">
+       <div class="col-md-4"></div>
+       <div class="col-md-4">
+           <h1>Uplode Property</h1><br/><br/>
+           <form [formGroup]="uplodForm" (ngSubmit)="onSubmit()">
+            
+               <input type="text" name="title" placeholder="Title" formControlName="title"/>
+               <br /><br />
+               <input type="text" name="description" placeholder="Description" formControlName="description"/>
+               <br /><br />
+               <input type="text" name="price" placeholder="Price" formControlName="price"/>
+               <br /><br />
+               <input type="text" name="address" placeholder="Address" formControlName="address"/>
+               <br /><br />
+               <input type="text" name="document" placeholder="Document" formControlName="document"/>
+               <br /><br />
+               <input type="text" name="yearbuilt" placeholder="Year Built" formControlName="yearbuilt"/>
+               <br /><br />
+               <input type="text" name="caprate" placeholder="Caprate" formControlName="caprate" />
+               <br /><br />
+               <input type="text" name="noi" placeholder="NOI" formControlName="noi"/>
+               <br /><br />
+               <input type="text" name="leaseexpiration" placeholder="Lease Expiration" formControlName="leaseexpiration"/>
+               <br /><br />
+               <input type="file" name="thumbnail" id="image" (change)="onSelectedFile($event)"/>
+               <br /><br />
+               <button type="submit">submit</button>
+           </form>
+       </div>
+       <div class="col-md-4"></div>
+   </div>
+</div>

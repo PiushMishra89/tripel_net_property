@@ -1,0 +1,32 @@
+<br/><br/><div class="container">
+     <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h1>Uplode Content</h1><br/><br/>
+            <form #propertyuplod="ngForm" enctype="multipart/form-data" (ngSubmit)="onSubmit(propertyuplod.value)">
+                <input type="text" name="title" placeholder="title" ngModel />
+                <br /><br />
+                <input type="text" name="description" placeholder="description" ngModel />
+                <br /><br />
+                <input type="text" name="price" placeholder="price" ngModel />
+                <br /><br />
+                <input type="text" name="address" placeholder="address" ngModel />
+                <br /><br />
+                <input type="text" name="document" placeholder="document" ngModel />
+                <br /><br />
+                <input type="text" name="yearbuilt" placeholder="yearbuilt" ngModel />
+                <br /><br />
+                <input type="text" name="caprate" placeholder="caprate" ngModel />
+                <br /><br />
+                <input type="text" name="noi" placeholder="noi" ngModel />
+                <br /><br />
+                <input type="text" name="leaseexpiration" placeholder="leaseexpiration" ngModel />
+                <br /><br />
+                <input type="file" name="thumbnail" ngModel />
+                <br /><br />
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
